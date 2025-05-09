@@ -1,123 +1,198 @@
-* {
+*,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
+body{
+    background-color: transparent;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 2.4em;
+}
+
+h4{
+    font-size: 1.6em;
+    color: #333;
+}
+
+.title .role{
+    font-size: 2em;
+    color: #333;
+}
+
+ul{
     list-style-type: none;
 }
 
-.wrapper {
-    width: 80%;
-    height: auto;
-    justify-items: center;
+.container{
     margin: 0 auto;
-    padding: 2rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
+    min-width: 50vw;
+    width: 720px;
+    height: fit-content;
+    border: 2px solid #222;
+    background-color: #f0f0f0;
 }
 
-section {
-    width: 100%;
-    height: auto;
-    margin-top: 3.5rem;
-}
-
-.info {
-    width: 100%;
-    height: auto;
-    justify-items: center;
+.information{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 2px solid #222;
 }
 
-.info .intro {
-    width: 70%;
-    height: auto;
-    border-right: .2rem solid #000;
-    margin-right: 2rem;
+.title{
+    max-width: 60%;    
 }
 
-.intro h1 {
-    font-size: 4.2rem;
-    font-weight: bold;
+ul.list-contact{
+    padding-left: 5em;
+    border-left: 2px solid #222;
 }
 
-.intro .major {
-    font-size: 2.2rem;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
-    margin-top: 1rem;
+.list-contact li{
+    padding: 0.3em;
+    font-size: 1.4em;
+    color: #333;
 }
 
-.info--bold {
-    font-size: 1.6rem;
-    font-weight: bold;
-    line-height: 1.6rem;
+.content{
     padding: 1rem;
-}
-
-span {
-    font-size: 1.6rem;
-    font-weight: lighter;
-}
-
-.title {
-    font-size: 2.4rem;
-    font-weight: 700;
-    border-bottom: .1rem solid #000;
-    line-height: 2.8rem;
-    padding-bottom: .1rem;
-}
-
-.row {
     display: flex;
+    justify-content: space-between;
 }
 
-.exp__list {
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
+.introduce{
+    max-width: 65%;
 }
 
-.mooc {
-    width: 30%;
-    border-right: .2rem dotted #000;
+.intro p{
+    margin: 2em 0;
+    color: #333;
+    font-size: 1.3em;
+    text-align: left;
 }
 
-.mooc .time {
-    font-size: 1.4rem;
+.list-exp{
+    margin-bottom: 2em;
 }
 
-.local {
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding: .2rem 0;
+.list-exp .item-exp{
+    margin-top: 1.5em;
+    color: #333;
 }
 
-.role {
-    margin-left: 2rem;
-    font-size: 1.6rem;
+.item-exp .role{
+    color: #333;
+    padding-right: 1em;
+    margin-bottom: 0.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-exp b{
+    font-size: 1.4em;
+}
+
+.item-exp .company,
+.item-exp .web{
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.item-exp .web b{
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.list-project,
+.list-skill,
+.learing .learing-school{
+    margin: 2em 0;
+    color: #333;
+}
+
+.list-project .role{
+    margin: 0.2em 0;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.list-project .framework{
+    font-size: 1.4em;
+    color: #333;
+}
+
+.list-project .desctiption{
+    margin: 1em 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4em;    
     font-weight: 600;
 }
 
-.edu__time{
-    font-size: 1.4rem;
-    margin-top: 2rem;
+a:hover{
+    text-decoration: underline;
 }
 
-.edu__uni--bold{
-    font-size: 1.6rem;
+.list-project b {
+    font-size: 1em;
+    color: #333;
+}
+
+.skill .sub-list{
+    padding: 0.6em 0;
+    font-size: 1.4em;
+}
+
+.skill .sub-list b{
+    font-size: 1em;
+}
+
+.learing .major{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learing p{
+    font-size: 1.4em;
+    margin-bottom: 0.2em;
+}
+
+.learing .school{
     font-weight: bold;
-    margin-top: .5rem;
+    font-size: 1.6em;
+    margin: 0.2em 0;
 }
 
-.skill__list{
-    margin-top: 2rem;
-    margin-left: 2rem;
-    list-style-type: circle;
+.learing b{
+    font-size: 1em;
 }
 
-.skill__list li{
-    font-size: 1.4rem;
+.list-certify .item{
+    font-size: 1.4em;
+    color: #333;
+}
+
+.list-certify .item{
+    margin: 1.2em 0;
 }
