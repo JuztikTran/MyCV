@@ -11,10 +11,12 @@ body{
 }
 
 h1{
+    color: #481904;
     font-size: 4em;
 }
 
 h2{
+    color: #481904;
     font-size: 2.4em;
 }
 
@@ -40,16 +42,16 @@ ul{
     min-width: 50vw;
     width: 720px;
     height: fit-content;
-    border: 2px solid #222;
-    background-color: #f0f0f0;
-}
+    border: 2px solid #481904;
+    color: mediumseagreen;
+    background-image: linear-gradient(to right bottom, #06ab6f55, #00a4a255, #0097dd55, #0081ff55, #4c53ee55);}
 
 .information{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid #481904;
 }
 
 .title{
@@ -58,7 +60,7 @@ ul{
 
 ul.list-contact{
     padding-left: 5em;
-    border-left: 2px solid #222;
+    border-left: 2px solid #481904;
 }
 
 .list-contact li{
