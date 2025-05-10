@@ -8,6 +8,24 @@
 
 body{
     background-color: transparent;
+    position: relative;
+}
+
+.btn-download{
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+    padding: 0.4em;
+}
+
+.btn-download:hover{
+    background-color: #333;
+    color: white;
+    text-decoration: none;
 }
 
 h1{
@@ -43,7 +61,6 @@ ul{
     width: 720px;
     height: fit-content;
     border: 2px solid #481904;
-    color: mediumseagreen;
     background-image: linear-gradient(to right bottom, #06ab6f55, #00a4a255, #0097dd55, #0081ff55, #4c53ee55);}
 
 .information{
