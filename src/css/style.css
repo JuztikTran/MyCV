@@ -75,13 +75,14 @@ ul.list-contact{
 
 .introduce{
     max-width: 65%;
+    padding-right: 2em;
 }
 
 .intro p{
     margin: 2em 0;
     color: #333;
     font-size: 1.3em;
-    text-align: left;
+    text-align: justify;
 }
 
 .list-exp{
@@ -188,8 +189,14 @@ a:hover{
     font-size: 1em;
 }
 
-.list-certify .item{
+.list-certify{
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+.list-certify .item a{
     font-size: 1.4em;
+    font-weight: 500;
     color: #333;
 }
 
